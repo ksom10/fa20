@@ -1,0 +1,1924 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+@font-face {
+  font-family: LatoReg;
+  src: url(../css/fonts/GillSans.ttf); }
+
+@font-face {
+  font-family: LatoLight;
+  src: url(../css/fonts/GillSans-Light.ttf); }
+
+@font-face {
+  font-family: LatoItalic;
+  src: url(../css/fonts/GillSans-Italic.ttf); }
+
+@font-face {
+  font-family: CaveatBold;
+  src: url(../css/fonts/Caveat-Bold.ttf); }
+
+@font-face {
+  font-family: CaveatReg;
+  src: url(../css/fonts/Caveat-Regular.ttf); }
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 30px; }
+  nav .logo {
+    background-image: url(../images/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 217px;
+    position: absolute;
+    left: 50px; }
+  nav .links {
+    width: 575px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: CaveatReg; }
+    nav .links a {
+      margin: auto;
+      font-size: 25px;
+      margin-right: 10px;
+      color: black;
+      text-decoration: none; }
+    nav .links #login {
+      background-color: #FFD972;
+      border-radius: 26px;
+      text-decoration: none;
+      font-size: 25px;
+      width: 160px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      padding-left: 10px;
+      -webkit-box-shadow: 0 6px 6px 0px #707070;
+      box-shadow: 0 6px 6px 0px #707070;
+      font-family: CaveatReg; }
+  nav .navicon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    cursor: pointer; }
+
+@media all and (max-width: 770px) {
+  nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 99;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit; }
+    nav .links {
+      position: fixed;
+      display: none;
+      width: 50%;
+      height: 70%;
+      margin: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: white; }
+      nav .links a {
+        margin-left: 120px; }
+    nav .navicon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      right: 20px;
+      top: 10px;
+      cursor: pointer; }
+      nav .navicon .line {
+        width: 100%;
+        height: 5px;
+        background-color: black;
+        margin: auto;
+        border-radius: 2px; } }
+
+.navMobileView nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .navMobileView nav .links a {
+    margin-right: 150px; }
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: -50px; }
+  .footer-wrapper footer {
+    width: 1880px;
+    height: 45px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .footer-wrapper footer .footerCopyright {
+      font-family: LatoItalic;
+      font-size: 15px;
+      color: #393939;
+      letter-spacing: 2px; }
+    .footer-wrapper footer .footerLinks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .footer-wrapper footer .footerLinks a {
+        margin-top: 10px;
+        padding: 0 10px;
+        font-family: LatoItalic;
+        font-size: 15px;
+        letter-spacing: 2px;
+        color: #393939;
+        text-decoration: none; }
+    .footer-wrapper footer .social {
+      height: 100%;
+      width: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+      .footer-wrapper footer .social .facebook {
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/facebook.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .footer-wrapper footer .social .instagram {
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/instagram.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+
+@media all and (max-width: 770px) {
+  .footer-wrapper {
+    width: 100%; }
+    .footer-wrapper footer {
+      width: 100%; }
+      .footer-wrapper footer .footerCopyright {
+        font-size: 10px;
+        width: 300px; }
+      .footer-wrapper footer .footerLinks {
+        padding: 5px; }
+        .footer-wrapper footer .footerLinks a {
+          font-size: 10px; }
+      .footer-wrapper footer .social {
+        width: 80px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .footer-wrapper footer .social .instagram {
+          height: 20px;
+          width: 20px; }
+        .footer-wrapper footer .social .facebook {
+          height: 20px;
+          width: 20px; } }
+
+@media all and (max-width: 360px) {
+  .footer-wrapper {
+    width: 100%; }
+    .footer-wrapper footer {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .footer-wrapper footer .footerCopyright {
+        font-size: 10px;
+        width: 300px; }
+      .footer-wrapper footer .footerLinks {
+        padding: 5px; }
+        .footer-wrapper footer .footerLinks a {
+          font-size: 10px; }
+      .footer-wrapper footer .social {
+        width: 80px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .footer-wrapper footer .social .instagram {
+          height: 20px;
+          width: 20px; }
+        .footer-wrapper footer .social .facebook {
+          height: 20px;
+          width: 20px; } }
+
+.home {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 92, 84, 0.5))), url(../images/hero.jpg);
+  background-image: -webkit-linear-gradient(rgba(242, 92, 84, 0.5)), url(../images/hero.jpg);
+  background-image: -o-linear-gradient(rgba(242, 92, 84, 0.5)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(242, 92, 84, 0.5)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .home .home-container {
+    height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .home .home-container .circle-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 500px;
+      height: 500px; }
+      .home .home-container .circle-container .circle {
+        position: relative;
+        width: 168px;
+        height: 168px;
+        background-color: #FCBCB8;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        margin-top: -325px;
+        right: -150px; }
+        .home .home-container .circle-container .circle p {
+          width: 105px;
+          height: 38px;
+          font-size: 12px;
+          font-family: LatoItalic; }
+      .home .home-container .circle-container .callout {
+        width: 360px;
+        height: 360px;
+        background-color: #FFD972;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        border-radius: 50%; }
+        .home .home-container .circle-container .callout h1 {
+          font-size: 24px;
+          font-family: CaveatReg; }
+        .home .home-container .circle-container .callout p {
+          width: 160px;
+          height: 80px;
+          font-size: 16px;
+          font-family: LatoReg; }
+      .home .home-container .circle-container .callout2 {
+        width: 400px;
+        height: 300px;
+        background-color: aquamarine;
+        margin: auto; }
+    @media all and (max-width: 960px) {
+      .home .home-container .background-center-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    @media all and (max-width: 500px) {
+      .home .home-container .background-center-content .callout,
+      .home .home-container .background-center-content .callout2 {
+        width: 300px;
+        height: 200px; } }
+
+.browse {
+  width: 100%;
+  height: 1000px; }
+  .browse .background {
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(167, 232, 189, 0.5))), url(../images/recipe-hero.jpg);
+    background-image: -webkit-linear-gradient(rgba(167, 232, 189, 0.5)), url(../images/recipe-hero.jpg);
+    background-image: -o-linear-gradient(rgba(167, 232, 189, 0.5)), url(../images/recipe-hero.jpg);
+    background-image: linear-gradient(rgba(167, 232, 189, 0.5)), url(../images/recipe-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .browse .background .text-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .browse .background .text-container h1 {
+        font-size: 25px;
+        left: -475px;
+        position: relative;
+        font-family: CaveatBold; }
+    .browse .background .browse-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 1200px;
+      height: 265px; }
+      .browse .background .browse-container .pizza {
+        width: 550px;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .browse .background .browse-container .pizza .pizza-pic {
+          width: 300px;
+          height: 100%;
+          background-image: url(../images/recipe-pizza.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10%; }
+        .browse .background .browse-container .pizza .pizza-text {
+          width: 225px;
+          height: 100%;
+          background-color: white;
+          border-radius: 10%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .browse .background .browse-container .pizza .pizza-text h1 {
+            font-size: 18px;
+            border-bottom: 3px solid black;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .pizza .pizza-text p {
+            font-size: 10px;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .pizza .pizza-text .cook-time {
+            width: 84px;
+            height: 25px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .pizza .pizza-text .cook-time .time-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/time.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .pizza .pizza-text .cook-time p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+          .browse .background .browse-container .pizza .pizza-text .cook-servings {
+            width: 84px;
+            height: 25px;
+            margin-top: 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .pizza .pizza-text .cook-servings .serve-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/servings.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .pizza .pizza-text .cook-servings p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+      .browse .background .browse-container .burger {
+        width: 550px;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .browse .background .browse-container .burger .burger-pic {
+          width: 300px;
+          height: 100%;
+          background-image: url(../images/recipe-burger.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10%; }
+        .browse .background .browse-container .burger .burger-text {
+          width: 225px;
+          height: 100%;
+          background-color: white;
+          border-radius: 10%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .browse .background .browse-container .burger .burger-text h1 {
+            font-size: 18px;
+            border-bottom: 3px solid black;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .burger .burger-text p {
+            font-size: 10px;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .burger .burger-text .cook-time {
+            width: 84px;
+            height: 25px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .burger .burger-text .cook-time .time-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/time.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .burger .burger-text .cook-time p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+          .browse .background .browse-container .burger .burger-text .cook-servings {
+            width: 84px;
+            height: 25px;
+            margin-top: 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .burger .burger-text .cook-servings .serve-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/servings.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .burger .burger-text .cook-servings p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+      .browse .background .browse-container .biryani {
+        width: 550px;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .browse .background .browse-container .biryani .biryani-pic {
+          width: 300px;
+          height: 100%;
+          background-image: url(../images/recipe-pilaf.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10%; }
+        .browse .background .browse-container .biryani .biryani-text {
+          width: 225px;
+          height: 100%;
+          background-color: white;
+          border-radius: 10%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .browse .background .browse-container .biryani .biryani-text h1 {
+            font-size: 18px;
+            border-bottom: 3px solid black;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .biryani .biryani-text p {
+            font-size: 10px;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .biryani .biryani-text .cook-time {
+            width: 84px;
+            height: 25px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .biryani .biryani-text .cook-time .time-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/time.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .biryani .biryani-text .cook-time p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+          .browse .background .browse-container .biryani .biryani-text .cook-servings {
+            width: 84px;
+            height: 25px;
+            margin-top: 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .biryani .biryani-text .cook-servings .serve-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/servings.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .biryani .biryani-text .cook-servings p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+      .browse .background .browse-container .chow {
+        width: 550px;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .browse .background .browse-container .chow .chow-pic {
+          width: 300px;
+          height: 100%;
+          background-image: url(../images/recipe-chowmein.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10%; }
+        .browse .background .browse-container .chow .chow-text {
+          width: 225px;
+          height: 100%;
+          background-color: white;
+          border-radius: 10%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .browse .background .browse-container .chow .chow-text h1 {
+            font-size: 18px;
+            border-bottom: 3px solid black;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .chow .chow-text p {
+            font-size: 10px;
+            width: 140px;
+            font-family: LatoReg; }
+          .browse .background .browse-container .chow .chow-text .cook-time {
+            width: 84px;
+            height: 25px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .chow .chow-text .cook-time .time-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/time.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .chow .chow-text .cook-time p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+          .browse .background .browse-container .chow .chow-text .cook-servings {
+            width: 84px;
+            height: 25px;
+            margin-top: 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .browse .background .browse-container .chow .chow-text .cook-servings .serve-pic {
+              width: 23px;
+              height: 100%;
+              background-image: url(../images/servings.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; }
+            .browse .background .browse-container .chow .chow-text .cook-servings p {
+              width: 43px;
+              font-size: 10px;
+              margin-top: 10px;
+              font-family: LatoReg; }
+
+@media all and (max-width: 770px) {
+  .browse {
+    width: 100%;
+    height: 1600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .browse .background {
+      width: 100%; }
+      .browse .background .text-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 100px;
+        width: 50%; }
+        .browse .background .text-container h1 {
+          left: 0; }
+      .browse .background .browse-container {
+        display: block;
+        margin-bottom: 300px;
+        margin-right: 250px;
+        width: 45%; }
+        .browse .background .browse-container .pizza {
+          margin-bottom: 30px; }
+        .browse .background .browse-container .burger {
+          margin-bottom: 30px; }
+        .browse .background .browse-container .biryani {
+          margin-bottom: 30px; }
+        .browse .background .browse-container .chow {
+          margin-bottom: 30px; } }
+
+@media all and (max-width: 500px) {
+  .browse {
+    width: 100%;
+    height: 2400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .browse .background {
+      width: 100%; }
+      .browse .background .text-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 150px;
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 200px; }
+      .browse .background .browse-container {
+        display: block;
+        margin-bottom: 50px;
+        margin-left: 170px;
+        width: 45%;
+        height: 100%; }
+        .browse .background .browse-container .pizza {
+          margin-bottom: 30px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 50%;
+          height: 400px; }
+          .browse .background .browse-container .pizza .pizza-pic {
+            height: 300px; }
+          .browse .background .browse-container .pizza .pizza-text {
+            width: 300px; }
+        .browse .background .browse-container .burger {
+          margin-bottom: 30px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 50%;
+          height: 400px; }
+          .browse .background .browse-container .burger .burger-pic {
+            height: 300px; }
+          .browse .background .browse-container .burger .burger-text {
+            width: 300px; }
+        .browse .background .browse-container .biryani {
+          margin-bottom: 30px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 50%;
+          height: 400px;
+          margin-top: -150px; }
+          .browse .background .browse-container .biryani .biryani-pic {
+            height: 300px; }
+          .browse .background .browse-container .biryani .biryani-text {
+            width: 300px; }
+        .browse .background .browse-container .chow {
+          margin-bottom: 10px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 50%;
+          height: 400px; }
+          .browse .background .browse-container .chow .chow-pic {
+            height: 300px; }
+          .browse .background .browse-container .chow .chow-text {
+            width: 300px; } }
+
+.login {
+  background-color: #FFD972;
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .login .login-container {
+    width: 900px;
+    height: 450px;
+    background-color: #FFD972;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+    .login .login-container .login-form {
+      width: 207px;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .login .login-container .login-form h1 {
+        font-size: 32px;
+        font-family: LatoReg; }
+      .login .login-container .login-form form {
+        width: 200px;
+        height: 50%;
+        background-color: #FFD972;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .login .login-container .login-form form input {
+          background-color: #FFD972;
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 30px;
+          font-family: LatoReg; }
+        .login .login-container .login-form form #log {
+          background-color: #FFD972;
+          border-radius: 26px;
+          margin-top: 40px;
+          text-decoration: none;
+          font-size: 25px;
+          width: 200px;
+          height: 50px;
+          border: none;
+          cursor: pointer;
+          padding-left: 10px;
+          -webkit-box-shadow: 0 6px 6px 0px #707070;
+          box-shadow: 0 6px 6px 0px #707070;
+          font-family: CaveatReg; }
+    .login .login-container .signin-form {
+      width: 250px;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .login .login-container .signin-form h1 {
+        font-size: 32px;
+        margin-left: -50px;
+        position: relative;
+        margin-top: -20px;
+        font-family: LatoReg; }
+      .login .login-container .signin-form h2 {
+        font-size: 12px;
+        margin-left: -50px;
+        position: relative;
+        font-family: LatoItalic; }
+      .login .login-container .signin-form form {
+        width: 200px;
+        height: 75%;
+        background-color: #FFD972;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .login .login-container .signin-form form input {
+          background-color: #FFD972;
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 30px;
+          font-family: LatoReg; }
+        .login .login-container .signin-form form #sign {
+          background-color: #FFD972;
+          border-radius: 26px;
+          margin-top: 40px;
+          text-decoration: none;
+          font-size: 25px;
+          width: 200px;
+          height: 50px;
+          border: none;
+          cursor: pointer;
+          padding-left: 10px;
+          -webkit-box-shadow: 0 6px 6px 0px #707070;
+          box-shadow: 0 6px 6px 0px #707070;
+          font-family: CaveatReg; }
+
+@media all and (max-width: 770px) {
+  .login {
+    width: 100%; }
+    .login .login-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .login .login-container .login-form {
+        margin-bottom: 60px; } }
+
+.create {
+  width: 1280px;
+  height: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .create .create-container {
+    width: 1000px;
+    height: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .create .create-container h1 {
+      font-size: 27px;
+      font-family: CaveatReg; }
+    .create .create-container p {
+      font-size: 20px;
+      font-family: LatoReg; }
+    .create .create-container .recipe-info {
+      width: 100%;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .create .create-container .recipe-info form {
+        width: 100%;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .create .create-container .recipe-info form input {
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 20px;
+          font-family: LatoReg; }
+    .create .create-container .ingredients-info {
+      width: 100%;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .create .create-container .ingredients-info form {
+        width: 100%;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .create .create-container .ingredients-info form input {
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 30px;
+          font-family: LatoReg; }
+    .create .create-container .instructions {
+      width: 100%;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .create .create-container .instructions form {
+        width: 100%;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .create .create-container .instructions form input {
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 30px;
+          font-family: LatoReg; }
+  .create .btnContain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .create .btnContain #create {
+      background-color: #EFA7A7;
+      border-radius: 26px;
+      text-decoration: none;
+      font-size: 25px;
+      width: 350px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      padding-left: 10px;
+      -webkit-box-shadow: 0 6px 6px 0px #707070;
+      box-shadow: 0 6px 6px 0px #707070;
+      font-family: CaveatReg; }
+
+@media all and (max-width: 770px) {
+  .create {
+    width: 100%; }
+    .create .create-container {
+      width: 70%; }
+      .create .create-container h1 {
+        margin-right: 100px; } }
+
+.your {
+  width: 100%;
+  height: 800px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(167, 232, 189, 0.5))), url(../images/recipe-hero.jpg);
+  background-image: -webkit-linear-gradient(rgba(167, 232, 189, 0.5)), url(../images/recipe-hero.jpg);
+  background-image: -o-linear-gradient(rgba(167, 232, 189, 0.5)), url(../images/recipe-hero.jpg);
+  background-image: linear-gradient(rgba(167, 232, 189, 0.5)), url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .your .header h1 {
+    font-size: 25px;
+    font-family: CaveatReg;
+    margin-right: 900px; }
+  .your .your-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1200px;
+    height: 265px; }
+    .your .your-container .pizza {
+      width: 550px;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .your .your-container .pizza .pizza-pic {
+        width: 300px;
+        height: 100%;
+        background-image: url(../images/recipe-pizza.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .your .your-container .pizza .pizza-pic #view {
+          background-color: #FFD972;
+          border-radius: 26px;
+          text-decoration: none;
+          font-size: 25px;
+          width: 120px;
+          height: 40px;
+          border: none;
+          cursor: pointer;
+          -webkit-box-shadow: 0 6px 6px 0px #707070;
+          box-shadow: 0 6px 6px 0px #707070;
+          font-family: CaveatReg; }
+      .your .your-container .pizza .pizza-text {
+        width: 225px;
+        height: 100%;
+        background-color: white;
+        border-radius: 10%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .your .your-container .pizza .pizza-text h1 {
+          font-size: 18px;
+          border-bottom: 3px solid black;
+          width: 140px;
+          font-family: LatoReg; }
+        .your .your-container .pizza .pizza-text p {
+          font-size: 10px;
+          width: 140px;
+          font-family: LatoReg; }
+        .your .your-container .pizza .pizza-text .cook-time {
+          width: 84px;
+          height: 25px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .your .your-container .pizza .pizza-text .cook-time .time-pic {
+            width: 23px;
+            height: 100%;
+            background-image: url(../images/time.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; }
+          .your .your-container .pizza .pizza-text .cook-time p {
+            width: 43px;
+            font-size: 10px;
+            margin-top: 10px;
+            font-family: LatoReg; }
+        .your .your-container .pizza .pizza-text .cook-servings {
+          width: 84px;
+          height: 25px;
+          margin-top: 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .your .your-container .pizza .pizza-text .cook-servings .serve-pic {
+            width: 23px;
+            height: 100%;
+            background-image: url(../images/servings.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; }
+          .your .your-container .pizza .pizza-text .cook-servings p {
+            width: 43px;
+            font-size: 10px;
+            margin-top: 10px;
+            font-family: LatoReg; }
+  .your .btn-container {
+    height: 130px;
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .your .btn-container #edit {
+      background-color: #FFD972;
+      border-radius: 26px;
+      text-decoration: none;
+      font-size: 20px;
+      width: 120px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      -webkit-box-shadow: 0 6px 6px 0px #707070;
+      box-shadow: 0 6px 6px 0px #707070;
+      font-family: CaveatReg; }
+    .your .btn-container #delete {
+      background-color: #FFD972;
+      border-radius: 26px;
+      text-decoration: none;
+      font-size: 20px;
+      width: 120px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      -webkit-box-shadow: 0 6px 6px 0px #707070;
+      box-shadow: 0 6px 6px 0px #707070;
+      margin-left: 10px;
+      font-family: CaveatReg; }
+
+@media all and (max-width: 770px) {
+  .your {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .your .header {
+      width: 300px;
+      margin-right: 175px; }
+      .your .header h1 {
+        font-size: 25px;
+        width: 100%; }
+    .your .your-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 500px; }
+    .your .btn-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 50px;
+      width: 500px; } }
+
+@media all and (max-width: 500px) {
+  .your {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .your .header {
+      width: 300px;
+      margin-left: 275px;
+      margin-top: 100px; }
+      .your .header h1 {
+        font-size: 25px;
+        width: 100%; }
+    .your .your-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 300px;
+      margin-right: 100px;
+      margin-bottom: 150px; }
+      .your .your-container .pizza {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 400px;
+        width: 50%; }
+        .your .your-container .pizza .pizza-text {
+          width: 300px; }
+    .your .btn-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 50px;
+      width: 300px;
+      margin-left: 100px; } }
+
+.view {
+  width: 100%;
+  height: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .view .view-container {
+    width: 1000px;
+    height: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .view .view-container .description {
+      height: 400px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .view .view-container .description .pic-container {
+        width: 50%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .view .view-container .description .pic-container .picture {
+          width: 470px;
+          height: 100%;
+          margin-right: 25px;
+          background-image: url(../images/recipe-pizza.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; }
+      .view .view-container .description .desc-container {
+        width: 50%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .view .view-container .description .desc-container h1 {
+          font-size: 25px;
+          margin-bottom: 20px;
+          font-family: LatoReg; }
+        .view .view-container .description .desc-container h2 {
+          font-size: 20px;
+          margin-bottom: 35px;
+          font-family: LatoReg; }
+        .view .view-container .description .desc-container p {
+          font-size: 20px;
+          margin-bottom: 50px;
+          font-family: CaveatReg; }
+    .view .view-container .ingredients {
+      height: 400px;
+      width: 100%;
+      margin-top: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .view .view-container .ingredients h1 {
+        font-size: 25px;
+        font-family: LatoReg; }
+      .view .view-container .ingredients p {
+        font-size: 20px;
+        font-family: CaveatReg; }
+    .view .view-container .instruction {
+      height: 400px;
+      width: 100%;
+      margin-top: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .view .view-container .instruction h1 {
+        font-size: 25px;
+        font-family: LatoReg; }
+      .view .view-container .instruction li {
+        font-size: 20px;
+        font-family: CaveatReg; }
+    .view .view-container .btn-container {
+      height: 130px;
+      width: 100%; }
+      .view .view-container .btn-container #edit {
+        background-color: #FFD972;
+        border-radius: 26px;
+        text-decoration: none;
+        font-size: 20px;
+        width: 120px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        -webkit-box-shadow: 0 6px 6px 0px #707070;
+        box-shadow: 0 6px 6px 0px #707070;
+        font-family: CaveatReg; }
+
+@media all and (max-width: 770px) {
+  .view {
+    width: 100%;
+    height: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .view .view-container {
+      width: 100%;
+      margin-top: -400px; }
+      .view .view-container .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 800px; }
+        .view .view-container .description .pic-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin-left: 170px;
+          margin-bottom: 30px; }
+        .view .view-container .description .desc-container {
+          margin-left: 170px; }
+      .view .view-container .ingredients {
+        margin-left: 170px;
+        width: 50%; }
+      .view .view-container .instruction {
+        margin-left: 170px;
+        width: 50%; }
+      .view .view-container .btn-container {
+        margin-left: 170px;
+        margin-top: 40px;
+        width: 50%; } }
+
+@media all and (max-width: 500px) {
+  .view {
+    width: 100%;
+    height: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .view .view-container {
+      width: 100%;
+      margin-top: -400px; }
+      .view .view-container .description {
+        width: 260px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 800px; }
+        .view .view-container .description .pic-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin-left: 100px;
+          margin-bottom: 30px; }
+          .view .view-container .description .pic-container .picture {
+            width: 260px;
+            height: 230px; }
+        .view .view-container .description .desc-container {
+          margin-left: 100px;
+          width: 260px; }
+      .view .view-container .ingredients {
+        margin-left: 100px;
+        width: 260px; }
+      .view .view-container .instruction {
+        margin-left: 100px;
+        width: 260px; }
+      .view .view-container .btn-container {
+        margin-left: 100px;
+        margin-top: 40px;
+        width: 50%; } }
+
+.edit {
+  width: 1280px;
+  height: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .edit .edit-container {
+    width: 1000px;
+    height: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .edit .edit-container h1 {
+      font-size: 27px;
+      font-family: CaveatReg; }
+    .edit .edit-container p {
+      font-size: 20px;
+      font-family: LatoReg; }
+    .edit .edit-container .recipe-info {
+      width: 100%;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .edit .edit-container .recipe-info form {
+        width: 100%;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .edit .edit-container .recipe-info form input {
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 20px;
+          font-family: LatoReg; }
+    .edit .edit-container .ingredients-info {
+      width: 100%;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .edit .edit-container .ingredients-info form {
+        width: 100%;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .edit .edit-container .ingredients-info form input {
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 30px;
+          font-family: LatoReg; }
+    .edit .edit-container .instructions {
+      width: 100%;
+      height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .edit .edit-container .instructions form {
+        width: 100%;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .edit .edit-container .instructions form input {
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 30px;
+          font-family: LatoReg; }
+  .edit .btnContain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .edit .btnContain #submit {
+      background-color: #EFA7A7;
+      border-radius: 26px;
+      text-decoration: none;
+      font-size: 25px;
+      width: 350px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      padding-left: 10px;
+      -webkit-box-shadow: 0 6px 6px 0px #707070;
+      box-shadow: 0 6px 6px 0px #707070;
+      font-family: CaveatReg; }
+
+@media all and (max-width: 770px) {
+  .edit {
+    width: 100%; }
+    .edit .edit-container {
+      width: 70%; }
+      .edit .edit-container h1 {
+        margin-right: 100px; } }

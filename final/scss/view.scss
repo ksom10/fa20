@@ -1,0 +1,221 @@
+.view{
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .view-container{
+        width: 1000px;
+        height: 1200px;
+        //background-color: chartreuse;
+        display: flex;
+        flex-direction: column;
+
+        .description{
+            height: 400px;
+            width: 100%;
+            //background-color: crimson;
+            //margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+
+        
+            
+           
+
+            .pic-container{
+                width: 50%;
+                height: 100%;
+                //background-color: aqua;
+                display: flex;
+                flex-direction: row;
+                
+
+               
+    
+                .picture{
+                    width: 470px;
+                    height: 100%;
+                    margin-right: 25px;
+                    background-image: url(../images/recipe-pizza.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .desc-container{
+                width: 50%;
+                height: 100%;
+                //background-color: blueviolet;
+                display: flex;
+                flex-direction: column;
+
+                h1{
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                    font-family: LatoReg;
+                }
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 35px;
+                    font-family: LatoReg;
+                }
+                p{
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                    font-family: CaveatReg;
+                }
+            }
+        }
+        .ingredients{
+            height: 400px;
+            width: 100%;
+            //background-color: crimson;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                font-size: 25px;
+                font-family: LatoReg;
+            }
+
+            p{
+                font-size: 20px;
+                font-family: CaveatReg;
+            }
+        }
+        .instruction{
+            height: 400px;
+            width: 100%;
+            //background-color: crimson;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                font-size: 25px;
+                font-family: LatoReg;
+            }
+
+            li{
+                font-size: 20px;
+                font-family: CaveatReg;
+            }
+        }
+        .btn-container{
+            height: 130px;
+            width: 100%;
+
+            #edit{
+                background-color: #FFD972;
+                border-radius: 26px;
+                text-decoration: none;
+                font-size: 20px;
+                width: 120px;
+                height: 40px;
+                border: none;
+                cursor: pointer;
+                box-shadow: 0 6px 6px 0px #707070;
+                font-family: CaveatReg;
+                }
+        }
+    }
+}
+
+@media all and (max-width: 770px){
+    .view{
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .view-container{
+            width: 100%;
+            margin-top: -400px;
+
+            .description{
+                display: flex;
+                flex-direction: column;
+                height: 800px;
+
+                .pic-container{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 170px;
+                    margin-bottom: 30px;
+                }
+                .desc-container{
+                    margin-left: 170px;
+                }
+            }
+            .ingredients{
+                margin-left: 170px;
+                width: 50%;
+            }
+            .instruction{
+                margin-left: 170px;
+                width: 50%;
+            }
+            .btn-container{
+                margin-left: 170px;
+                margin-top: 40px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px){
+    .view{
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .view-container{
+            width: 100%;
+            margin-top: -400px;
+
+            .description{
+                width: 260px;
+                display: flex;
+                flex-direction: column;
+                height: 800px;
+
+                .pic-container{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 100px;
+                    margin-bottom: 30px;
+
+                    .picture{
+                        width: 260px;
+                        height: 230px;
+                    }
+                }
+                .desc-container{
+                    margin-left: 100px;
+                    width: 260px;
+                }
+            }
+            .ingredients{
+                margin-left: 100px;
+                width: 260px;
+            }
+            .instruction{
+                margin-left: 100px;
+                width: 260px;
+            }
+            .btn-container{
+                margin-left: 100px;
+                margin-top: 40px;
+                width: 50%;
+            }
+        }
+    }
+}

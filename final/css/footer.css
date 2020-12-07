@@ -1,0 +1,9 @@
+footer {
+  height: 50px;
+  background-color: #0046be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  footer p {
+    margin: auto;
+    color: white; }

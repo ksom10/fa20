@@ -1,0 +1,537 @@
+.browse{
+    width: 100%;
+    height: 1000px;
+
+    .background{
+        height: 100%;
+        //background-image: url(../images/hero.jpg);
+        background-image: linear-gradient( rgba(167,232,189, .5)), 
+        url(../images/recipe-hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .text-container{
+            display: flex;
+            flex-direction: row;
+            
+        h1{
+            //margin-top: 50px;
+            font-size: 25px;
+            left: -475px;
+            position: relative;
+            font-family: CaveatBold;
+        }
+    }
+
+        .browse-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        //background-color: blue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 1200px;
+        height: 265px;
+
+
+        .pizza{
+        width: 550px;
+        height: 100%;
+        //background-color: cornflowerblue;
+        display: flex;
+        flex-direction: row;
+
+        
+        .pizza-pic{
+            width: 300px;
+            height: 100%;
+            background-image: url(../images/recipe-pizza.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10%;
+        }
+        .pizza-text{
+            width: 225px;
+            height: 100%;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-size: 18px;
+                border-bottom: 3px solid black;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            p{
+                font-size: 10px;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            .cook-time{
+                width: 84px;
+                height: 25px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .time-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/time.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+            .cook-servings{
+                width: 84px;
+                height: 25px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .serve-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/servings.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+        }
+    }
+    .burger{
+        width: 550px;
+        height: 100%;
+        //background-color: cornflowerblue;
+        display: flex;
+        flex-direction: row;
+
+        
+        .burger-pic{
+            width: 300px;
+            height: 100%;
+            background-image: url(../images/recipe-burger.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10%;
+        }
+        .burger-text{
+            width: 225px;
+            height: 100%;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            h1{
+                font-size: 18px;
+                border-bottom: 3px solid black;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            p{
+                font-size: 10px;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            .cook-time{
+                width: 84px;
+                height: 25px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .time-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/time.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+            .cook-servings{
+                width: 84px;
+                height: 25px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .serve-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/servings.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+        }
+    }
+    .biryani{
+        width: 550px;
+        height: 100%;
+        //background-color: cornflowerblue;
+        display: flex;
+        flex-direction: row;
+
+        
+        .biryani-pic{
+            width: 300px;
+            height: 100%;
+            background-image: url(../images/recipe-pilaf.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10%;
+        }
+        .biryani-text{
+            width: 225px;
+            height: 100%;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            h1{
+                font-size: 18px;
+                border-bottom: 3px solid black;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            p{
+                font-size: 10px;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            .cook-time{
+                width: 84px;
+                height: 25px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .time-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/time.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+            .cook-servings{
+                width: 84px;
+                height: 25px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .serve-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/servings.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+        }
+    }
+    .chow{
+        width: 550px;
+        height: 100%;
+        //background-color: cornflowerblue;
+        display: flex;
+        flex-direction: row;
+
+        
+        .chow-pic{
+            width: 300px;
+            height: 100%;
+            background-image: url(../images/recipe-chowmein.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10%;
+        }
+        .chow-text{
+            width: 225px;
+            height: 100%;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            h1{
+                font-size: 18px;
+                border-bottom: 3px solid black;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            p{
+                font-size: 10px;
+                width: 140px;
+                font-family: LatoReg;
+            }
+            .cook-time{
+                width: 84px;
+                height: 25px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .time-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/time.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+            .cook-servings{
+                width: 84px;
+                height: 25px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .serve-pic{
+                    width: 23px;
+                    height: 100%;
+                    background-image: url(../images/servings.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                p{
+                    width: 43px;
+                    font-size: 10px;
+                    margin-top: 10px;
+                    font-family: LatoReg;
+                }
+            }
+        }
+    }
+        }
+    }
+}
+
+@media all and (max-width: 770px) {
+    .browse{
+        width: 100%;
+        height: 1600px;
+        display: flex;
+        align-items: center;
+       
+
+        .background{
+            width: 100%;
+            .text-container{
+                display: flex;
+                flex-direction: column;
+                margin-left: 100px;
+                width: 50%;
+
+                h1{
+                    left: 0;
+                }
+            }
+            .browse-container{
+                display: block;
+                margin-bottom: 300px;
+                margin-right: 250px;
+                width: 45%;
+
+                .pizza{
+                    margin-bottom: 30px;
+                }
+
+                .burger{
+                    margin-bottom: 30px;
+                }
+                .biryani{
+                    margin-bottom: 30px;
+                }
+                .chow{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .browse{
+        width: 100%;
+        height: 2400px;
+        display: flex;
+        align-items: center;
+       
+
+        .background{
+            width: 100%;
+            .text-container{
+                display: flex;
+                flex-direction: column;
+                margin-right: 150px;
+                width: 50%;
+                margin-bottom: 30px;
+                margin-top: 200px;
+
+                h1{
+                    
+                }
+            }
+            .browse-container{
+                display: block;
+                margin-bottom: 50px;
+                margin-left: 170px;
+                width: 45%;
+                height: 100%;
+                
+
+                .pizza{
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    height: 400px;
+
+                    .pizza-pic{
+                        height: 300px;
+                    }
+
+                    .pizza-text{
+                        width: 300px;
+                    }
+                }
+
+                .burger{
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    height: 400px;
+
+                    .burger-pic{
+                        height: 300px;
+                    }
+
+                    .burger-text{
+                        width: 300px;
+                    }
+                }
+                .biryani{
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    height: 400px;
+                    margin-top: -150px;
+
+                    .biryani-pic{
+                        height: 300px;
+                    }
+
+                    .biryani-text{
+                        width: 300px;
+                    }
+                }
+                .chow{
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    height: 400px;
+
+                    .chow-pic{
+                        height: 300px;
+                    }
+
+                    .chow-text{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
